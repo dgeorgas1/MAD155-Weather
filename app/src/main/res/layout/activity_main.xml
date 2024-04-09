@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvCity"
+        android:layout_width="@dimen/titleWidth_size"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/titleTopMargin_size"
+        android:gravity="center_horizontal"
+        android:text="@string/city_label"
+        android:textSize="@dimen/title_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvConditions"
+        android:layout_width="@dimen/labelWidth_size"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/leftColStartMargin"
+        android:layout_marginTop="@dimen/titleTopMargin_size"
+        android:text="@string/conditions_label"
+        android:textSize="@dimen/label_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCity" />
+
+    <TextView
+        android:id="@+id/tvTemp"
+        android:layout_width="@dimen/labelWidth_size"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/leftColStartMargin"
+        android:layout_marginTop="@dimen/betweenLabelMargin"
+        android:text="@string/temp_label"
+        android:textSize="@dimen/label_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvConditions" />
+
+    <TextView
+        android:id="@+id/tvWind"
+        android:layout_width="@dimen/labelWidth_size"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/leftColStartMargin"
+        android:layout_marginTop="@dimen/betweenLabelMargin"
+        android:text="@string/wind_label"
+        android:textSize="@dimen/label_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTemp" />
+
+    <TextView
+        android:id="@+id/tvCloudCoverage"
+        android:layout_width="@dimen/labelWidth_size"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/leftColStartMargin"
+        android:layout_marginTop="@dimen/betweenLabelMargin"
+        android:text="@string/cloudCoverage_label"
+        android:textSize="@dimen/label_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWind" />
+
+    <TextView
+        android:id="@+id/tvConditionsData"
+        android:layout_width="@dimen/labelWidth_size"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/rightColStartMargin"
+        android:layout_marginTop="@dimen/titleTopMargin_size"
+        android:text="@string/conditionsData_label"
+        android:textSize="@dimen/label_size"
+        app:layout_constraintStart_toEndOf="@+id/tvConditions"
+        app:layout_constraintTop_toBottomOf="@+id/tvCity" />
+
+    <TextView
+        android:id="@+id/tvTempData"
+        android:layout_width="@dimen/labelWidth_size"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/rightColStartMargin"
+        android:layout_marginTop="@dimen/betweenLabelMargin"
+        android:text="@string/tempData_label"
+        android:textSize="@dimen/label_size"
+        app:layout_constraintStart_toEndOf="@+id/tvTemp"
+        app:layout_constraintTop_toBottomOf="@+id/tvConditionsData" />
+
+    <TextView
+        android:id="@+id/tvWindData"
+        android:layout_width="@dimen/labelWidth_size"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/rightColStartMargin"
+        android:layout_marginTop="@dimen/betweenLabelMargin"
+        android:text="@string/windData_label"
+        android:textSize="@dimen/label_size"
+        app:layout_constraintStart_toEndOf="@+id/tvWind"
+        app:layout_constraintTop_toBottomOf="@+id/tvTempData" />
+
+    <TextView
+        android:id="@+id/tvCloudCoverageData"
+        android:layout_width="@dimen/labelWidth_size"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/rightColStartMargin"
+        android:layout_marginTop="@dimen/betweenLabelMargin"
+        android:text="@string/cloudCoverageData_label"
+        android:textSize="@dimen/label_size"
+        app:layout_constraintStart_toEndOf="@+id/tvCloudCoverage"
+        app:layout_constraintTop_toBottomOf="@+id/tvWindData" />
+
+    <EditText
+        android:id="@+id/etCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/leftColStartMargin"
+        android:layout_marginTop="@dimen/titleTopMargin_size"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/searchHint_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCloudCoverage" />
+
+    <Button
+        android:id="@+id/btnCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/titleTopMargin_size"
+        android:text="@string/citySearch_button"
+        app:layout_constraintStart_toEndOf="@+id/etCity"
+        app:layout_constraintTop_toBottomOf="@+id/tvCloudCoverageData" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

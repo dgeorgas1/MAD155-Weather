@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Weather</string>
+
+    <!--Labels-->
+    <string name="city_label">City</string>
+    <string name="conditions_label">Conditions</string>
+    <string name="temp_label">Temperature</string>
+    <string name="wind_label">Wind</string>
+    <string name="cloudCoverage_label">Cloud Coverage</string>
+
+    <!--Data-->
+    <string name="conditionsData_label">Conditions</string>
+    <string name="tempData_label">Temperature</string>
+    <string name="windData_label">Wind</string>
+    <string name="cloudCoverageData_label">Cloud Coverage</string>
+
+    <!--Interactions-->
+    <string name="searchHint_label">City Goes Here</string>
+    <string name="citySearch_button">Search</string>
+
+</resources>

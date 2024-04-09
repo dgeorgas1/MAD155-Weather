@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Font Size-->
+    <dimen name="title_size">24dp</dimen>
+    <dimen name="label_size">18dp</dimen>
+
+    <!--Margins-->
+    <dimen name="titleTopMargin_size">40dp</dimen>
+    <dimen name="leftColStartMargin">40dp</dimen>
+    <dimen name="rightColStartMargin">60dp</dimen>
+    <dimen name="betweenLabelMargin">10dp</dimen>
+
+    <!--Label Widths-->
+    <dimen name="titleWidth_size">150dp</dimen>
+    <dimen name="labelWidth_size">130dp</dimen>
+
+</resources>
